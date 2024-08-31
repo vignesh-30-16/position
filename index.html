@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+<div class="contain">
+    <header>
+    <h1>Contact Us</h1>
+    </header>
+        <div class="main-container">
+            <div class="container">
+                      <div class="btn">    
+                        <button class="button" id="myBtn">Click here</button>
+                      </div>
+            
+                <div  id="myModal">
+                    
+                         <div class="model-2">
+                            <form action="">
+                                <button class="close"><i class="fa-solid fa-square-xmark"></i></button>
+                                <div class="one">
+                                    <input type="text" name="name" id="" class="one">
+                                    <label for=""  >Name</label><br><br>
+                                </div>
+                                <div class="two">
+                                    <input type="email" name="mail" id=""  >
+                                    <label for=""  >Mail</label><br><br>
+                                </div>
+                                <div class="three">
+                                    <textarea name="" id="" ></textarea>
+                                    <label for="" class="second-class">Message</label>
+                                </div>
+                                <div class="btn-second">
+                                    <input type="submit" value="Send">
+                            
+                                
+                            </form>
+                        </div>
+                    
+            </div> 
+        
+            </div>
+        </div>
+    </div>
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+   btn.onclick = function() {
+       modal.style.display = "block";
+   }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
